@@ -2,6 +2,14 @@
     /* border-bottom: 1px solid; */
 }
 
+header{
+    width: 100%;
+    height: 728px;
+    background-image: url('images/header-backround-img.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
 li{
     text-align: left;
     list-style-type: none;
@@ -16,7 +24,428 @@ a{
     color: black;
 }
 
+#burger-menu{
+    fill: white;
+}
+
+#Menu{
+    color: white;
+}
+
 ul{
+    float: left;
+    text-decoration: none;
+}
+
+.menu-item-li{
+    color: rgb(0,122,197);
+    font: 170%/1.55 "HSE Sans", "Helvetica Neue", Arial, sans-serif;
+    font-size: 75%;
+}
+
+.burger-menu-container{
+    width: 45px;
+    height: 45px;
+    padding: 7px;
+    border: 0.1px solid white;
+}
+
+.breadcrumb-item-header{
+    color: white;
+}
+
+.header-bradcrumbs-container{
+    fill: white;
+}
+
+.header-icon-container{
+    padding: 7px;
+    margin-right: 10px;
+}
+
+.header-breadcrumb-container{
+    width: 870px;
+    color: white;
+
+}
+
+.search-header-container{
+    padding: 7px;
+    width: 40px;
+    float: right;
+}
+
+.language-header-container{
+    padding: 7px;
+    margin-top: 4px;
+    width: 60px;
+    float: right;
+}
+
+
+.setting-button{
+    display: block;
+    float: right;
+    width: 100%;
+}
+.top-header-right-section{
+    width: 100%;
+    height: 45px;
+    border: 0.1px solid white;
+    display: flex;
+
+
+}
+
+a{
+    text-decoration: none;
+}
+
+footer{
+    background-color: white;
+    margin-top: 40px;
+}
+
+.info-footer-text{
+    color: rgb(0,0,0,.5);
+    font: 170%/1.55 "HSE Sans", "Helvetica Neue", Arial, sans-serif;
+    font-size: 75%;
+    margin-top: 5px;
+}
+
+.top-header-row{
+    display: flex;
+    width: 100%;
+    height: 45px;
+}
+
+.language-setting{
+    width: 50px;
+    height: 21px;
+    background-color: white;
+    border-radius: 3px;
+    padding-bottom: 10px;
+    padding-left: 3px;
+
+}
+
+.language-setting-item{
+    line-height: 21px;
+    font-size: 14px;
+    font-size: .8em;
+    font-weight: 600;
+}
+
+.subtitle-container{
+    font: 170%/1.55 "HSE Sans", "Helvetica Neue", Arial, sans-serif;
+    color: white;
+    font-size: 80.5%;
+}
+
+.title-container{
+    color: white;
+    font-family: "HSE Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+.text-container{
+    font-family: "HSE Slab", Georgia, 'Times New Roman', serif;
+    font-size: 120%;
+    color: white;
+    width: 862px;
+}
+
+#text-link{
+    color: white;
+}
+
+.main-header-container{
+    padding: 60px 0px 0px 100px;                                                       ;
+}
+
+.header-bottom-menu-container{
+    height: 45px;
+
+}
+
+.header-button{
+    width: 300px;
+    height: 56px;
+    border: 2px solid white;
+    padding: 12.24px 24.480px 12.24px 40.480px;
+}
+
+.header-button-link{
+    color: white;
+    text-decoration: none;
+}
+
+.header-button-container{
+    padding-left: 100px;
+    padding-top: 20px;
+}
+
+.header-bottom-menu-container{
+    display: flex;
+    margin-left: 100px;
+    margin-top: 110px;
+}
+
+.home-menu-item{
+    height: 45px;
+    width: 46.6px;
+    background-color: white;
+    padding: 9px;
+    padding-left: 15px;
+    border-radius: 2px;
+    margin-right: 20px;
+}
+
+.link-menu-item{
+    width: 135px;
+    height: 45px;
+    margin-top: 8px;
+}
+
+.link-header-bottom-menu{
+    color: white;
+}
+
+.b-inline-icon{
+    width: 26px;
+    height: 22px;
+}
+
+.long-studing{
+    font: 600 26px/1.2 "HSE Sans", "Helvetica Neue", Arial, sans-serif;
     float: left;
 }
 
+#long-studing-text{
+    font: 170%/1.55 "HSE Sans", "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+}
+
+.main-info-container{
+    padding-left: 50px;
+    height: 250px;
+    width: 100%;
+    margin-top: 90px;
+    float: left;
+}
+
+.number-place{
+    float: left;
+    width: 200px;
+    margin-left: 70px;
+    font: 170%/1.55 "HSE Sans", "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+    text-align: left;
+}
+
+.language-info-container{
+    width: 150px;
+    float: left;
+    margin-left: 30px;
+}
+
+.all-language{
+    height: 29px;
+    width: 106px;
+    border: 1px solid #000;
+    border-radius: 8px;
+}
+
+.language-text{
+    font: 170%/1.55 "HSE Sans", "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.accreditation-container{
+    height: 100px;
+    width: 150px;
+    float: left;
+    margin-left: 70px;
+    text-align: left;
+}
+.accreditation-link{
+    font: 170%/1.55 "HSE Sans", "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+    text-align: left;
+    color: black;
+    text-decoration: none;
+}
+
+.long-studing-img-wrapper{
+    margin-bottom: 10px;
+}
+
+.number-place-text{
+    margin-top: 10px;
+}
+
+.accredation-text-wrapper{
+    margin-top: 5px;
+}
+
+.right-menu-item{
+    margin-bottom: 10px;
+    color: rgb(0,122,197);
+    font-family: "HSE Sans", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 600;
+}
+
+.right-menu-container{
+    margin-top: 60px;
+
+}
+
+.accordion-container{
+    padding: 400px 30px 0px 30px;
+    /* padding-top: 400px; */
+}
+
+.accordion{
+    background-color: black;
+    color: #000;
+}
+
+.green-button{
+    background-color: #12B252;
+    color: white;
+    border: 0px;
+}
+
+.blue-button{
+    background-color: #0050CF;
+    color: white;
+    border: 0px;
+}
+
+.white-button{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.right-menu-button{
+    width: 230px;
+    border-radius: 6px;
+    font:170%/1.55 "HSE Sans", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 600;
+    padding: 0.6em 1.2em;
+    font-size: 1.2em;
+    font-size: 15.6px;
+    margin: 10px;
+}
+
+.educational-information-link{
+    font: 170%/1.55 "HSE Sans", "Helvetica Neue", Arial, sans-serif;
+    font-size: 13px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 3px;
+}
+
+.educational-information-item{
+    float: left;
+    margin-left: 30px;
+    width: 100%;
+}
+
+.educational-information-img{
+    float: left;
+}
+
+.youtube-container{
+    width: 100%;
+    margin-top: 40px;
+}
+
+/* footer */
+
+.footer-bottom-row{
+    padding: 30px 0px 0px 180px;
+    display: flex;
+    color: rgb(0,122,197);
+}
+
+.bottom-links-container{
+    display: flex;
+}
+
+.bottom-link-container{
+    margin: 0px 5px 0px 5px;
+}
+
+.footer-menu-container{
+    padding-top: 20px;
+}
+
+.footer-breadcrumb-container{
+    border-bottom: 1px solid #ddd;
+    border-top: 4px solid #000;
+    width: 85%;
+    height: 45px;
+    padding: 12.75px 0px 12.75px 0px;
+    margin: auto;
+}
+
+.breadcrumb-item{
+    font: 170%/1.55 "HSE Sans", "Helvetica Neue", Arial, sans-serif;
+    font-size: 75%;
+}
+
+#filter-title {
+    padding: 5px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#filter-container {
+    margin-bottom: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.input-item {
+    margin: 10px;
+}
+
+.titles-cards-conainer {
+
+}
+
+.article-card{
+    padding: 10px;
+    margin: auto;
+    border: #0f0f0f solid 2px;
+    border-radius: 25px;
+    width: 90%;
+    position: relative;
+    margin-top: 20px;
+
+
+}
+
+.preview-image{
+    width: 500px;
+    height: 400px;
+}
+
+.arcticles-text{
+    padding-top: 20px;
+    width: 100%;
+}
+
+.articles-image{
+    position: relative;
+    float: left;
+}
+
+.articles-cards-conainer {
+    justify-content: center;
+    text-align: center;
+    padding: auto;
+}

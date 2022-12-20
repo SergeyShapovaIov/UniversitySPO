@@ -8,13 +8,17 @@ class Service {
   }
 
   public function filtredStudents() {
-    return $this->db->fetchStudents($this->preparedGet());
+    if(isset($_GET['fio']) && isset($_GET['group_name']) && isset($_GET['year'])) {
+      return $this->db->fetchStudents($this->preparedGet());
+    } else {
+      return $this->db->fetch();
+    }
   }
 
   private function preparedGet() {
-    $this->replaceIfNotExist('fio');
-    $this->replaceIfNotExist('name');
-    $this->replaceIfNotExist('year');
+      $this->replaceIfNotExist('fio');
+      $this->replaceIfNotExist('group_name');
+      $this->replaceIfNotExist('year');
     return $_GET;
   }
 
