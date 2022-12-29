@@ -1,10 +1,10 @@
 <?php
-class Repository {
+class StudentRepository {
 
   private $db;
 
-  public function __construct() {
-    $this->db = new PDO('mysql:host=localhost;dbname=l2_1', 'root', 'root');
+  public function __construct($db) {
+    $this->db = $db;
   }
 
   public function fetchStudents($get) {

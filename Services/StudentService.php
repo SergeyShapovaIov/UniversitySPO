@@ -1,5 +1,5 @@
 <?php
-class Service {
+class StudentService {
 
   private $db;
 
