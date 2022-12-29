@@ -3,7 +3,7 @@
   <div class="registration-form-title">
     Авторизация
   </div>
-  <form method="get" action="/login.php">
+  <form method="get" action="/UniversitySPO/login.php">
     <div class="mb-3">
       <label for="exampleInputEmail1" class="form-label">Почта</label>
       <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -20,7 +20,7 @@
     <div id="registration-button-text">
       У вас еще нет аккаунта?
     </div>
-      <a href="/Views/registration.php">
+      <a href="/UniversitySPO/Views/registration.php">
           <button  class="btn btn-primary registration-button">Зарегистрироваться</button>
       </a>
   </div>

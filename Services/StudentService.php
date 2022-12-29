@@ -15,6 +15,15 @@ class StudentService {
     }
   }
 
+  public function getAllYear() {
+    $years = $this->db->getAllYear();
+    $resultArray = array();
+    foreach ($years as $year){
+      array_push($resultArray, $year[0]);
+    }
+    return $resultArray;
+  }
+
   private function preparedGet() {
       $this->replaceIfNotExist('fio');
       $this->replaceIfNotExist('group_name');

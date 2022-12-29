@@ -19,6 +19,12 @@ class StudentRepository {
     return $stmt->fetchAll();
   }
 
+  public function getAllYear()
+  {
+    $stmt = $this->db->query('SELECT student.year FROM student');
+    return $stmt->fetchAll();
+  }
+
   public function fetch() {
     return $this->db->query('SELECT * FROM l2_1.student INNER JOIN l2_1.group
       ON l2_1.group.id=l2_1.student.group_id');

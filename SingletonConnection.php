@@ -24,7 +24,7 @@ class SingletonConnection {
 
   public static function connection(): PDO {
     try {
-      return new PDO('mysql:host=localhost;dbname=l2_1', 'root', 'root');
+      return new PDO('mysql:host=localhost;dbname=l2_1', 'root', '');
     } catch (PDOException $ex) {
       // avoiding to exception swallowing.
       echo 'Unable to get connection with database';

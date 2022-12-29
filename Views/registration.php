@@ -7,7 +7,7 @@
   <div class="registration-form-title">
     Форма регистрации
   </div>
-    <form action="/registration.php" method="post">
+    <form action="/UniversitySPO/registration.php" method="post">
     <div class="mb-3">
       <label for="login" class="form-label">Почта</label>
       <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">

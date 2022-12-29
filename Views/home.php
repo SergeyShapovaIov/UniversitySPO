@@ -5,14 +5,19 @@
     Фильтрация результата поиска
   </div>
 
-  <form action="/" method="get">
+  <form action="/UniversitySPO/" method="get">
     <div id="filter-container">
       <label>Введите имя студента</label>
-      <input name="fio" id="input-title" class="input-item" type="text" placeholder="Имя"></br>
+      <input name="fio" id="input-title" class="input-item" type="text" placeholder="Имя" value="<?php if(isset($_GET['fio']) && $_GET['fio'] != '%') { echo $_GET['fio'];}?>"></br>
       <label>Введите название группы</label>
-      <input name="group_name" id="input-magazine" class="input-item" type="text" placeholder="Группа"></br>
+      <input name="group_name" id="input-magazine" class="input-item" type="text" placeholder="Группа" value="<?php if(isset($_GET['group_name']) && $_GET['group_name'] != '%') {echo $_GET['group_name'];}?>"></br>
       <label>Введите год</label>
-      <input name="year" id="input-author" class="input-item" type="number" placeholder="Год"></br>
+        <select name="year" class="input-item" id="exampleFormControlSelect1" >
+            <option></option>
+            <?php foreach ($years as $year) : ?>
+            <option <?php if(isset($_GET['year']) && ($year == $_GET['year'])) { echo 'selected' ;}?>> <?=$year?> </option>
+            <?php endforeach ;?>
+        </select></br>
 
       <button type="submit" id="apply-filter-btn">
         Применить фильтр
