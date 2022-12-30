@@ -30,9 +30,9 @@ class UserService
 
     try {
       $this->userRepository->create($registrationParams);
-      header('Location: /');
+      header('Location: /UniversitySpo/');
     } catch (Exception $exception) {
-      header('Location: Views/registration.php');
+      header('Location: /UniversitySPO/Views/registration.php');
     }
 
   }
@@ -49,16 +49,16 @@ class UserService
         throw new RuntimeException();
       }
     } catch (RuntimeException $exception) {
-      header('Location: /Views/login.php');
+      header('Location: /UniversitySPO/Views/login.php');
     }
 
     $user = $this->userRepository->getUser($_GET['email']);
     if(empty($user) || !password_verify($_GET['password'], $user['password'])){
-      header('Location: /Views/login.php');
+      header('Location: /UniversitySPO/Views/login.php');
     } else {
       session_start();
       $_SESSION['USER_ID'] = $user['id'];
-      header('Location: /');
+      header('Location: /UniversitySPO/');
     }
   }
 

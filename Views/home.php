@@ -8,9 +8,9 @@
   <form action="/UniversitySPO/" method="get">
     <div id="filter-container">
       <label>Введите имя студента</label>
-      <input name="fio" id="input-title" class="input-item" type="text" placeholder="Имя" value="<?php if(isset($_GET['fio']) && $_GET['fio'] != '%') { echo $_GET['fio'];}?>"></br>
+      <input name="fio" id="input-title" class="input-item" type="text" placeholder="Имя" value="<?php if(isset($_GET['fio']) && $_GET['fio'] != '%') { echo $_GET['fio'];} if($_GET['fio'] == '%' ){echo "";};?>"></br>
       <label>Введите название группы</label>
-      <input name="group_name" id="input-magazine" class="input-item" type="text" placeholder="Группа" value="<?php if(isset($_GET['group_name']) && $_GET['group_name'] != '%') {echo $_GET['group_name'];}?>"></br>
+      <input name="group_name" id="input-magazine" class="input-item" type="text" placeholder="Группа" value="<?php if(isset($_GET['group_name']) && $_GET['group_name'] != '%') {echo $_GET['group_name'];} if($_GET['group_name'] == '' ){echo '';}?>"></br>
       <label>Введите год</label>
         <select name="year" class="input-item" id="exampleFormControlSelect1" >
             <option></option>
@@ -22,7 +22,7 @@
       <button type="submit" id="apply-filter-btn">
         Применить фильтр
       </button>
-      <button type="clear" id="clear-filter-btn" href="" >
+      <button  id="clear-filter-btn" onclick="document.querySelectorAll('input[type=text],select').forEach(el=>el.value = '');">
         Очистить фильтр
       </button>
     </div>
